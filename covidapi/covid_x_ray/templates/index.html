@@ -53,10 +53,10 @@
           <span>Corona Predication from X-ray Image</span>
           <h1>Deep Learning <b>MobileNetV2 Model</b></h1>
           <p>Upload X-ray Image Here</p>
-		  <form action="/result.html" method="POST">
+		  <form action="/result.html" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
 				
-				<input class="form-control form-control-lg" name='img' type="file" accept="image/*">
+				<input class="form-control form-control-lg" name='image' type="file" accept="image/*">
 				<input class="btn btn-regular" type="submit" value='submit'>
 		  </form>
         <br>
